@@ -1,0 +1,919 @@
+<!DOCTYPE html>
+<html style="font-size: 16px;">
+
+<head>
+  <meta charset="utf-8">
+  <title>GoCovid</title>
+  <link rel="stylesheet" href="nicepage.css" media="screen">
+  <link id="u-theme-google-font" rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i">
+  <link id="u-page-google-font" rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Red+Rose:300,400,500,600,700">
+</head>
+
+<style>
+  .e12_35 {
+    color: white(0, 0, 0, 1);
+    width: 212px;
+    height: 78px;
+    position: absolute;
+    left: -375px;
+    top: 10px;
+    font-family: Red Rose;
+    text-align: center;
+    font-size: 36px;
+    letter-spacing: 0;
+  }
+
+  .e12_27 {
+    color: white(0, 0, 0, 1);
+    width: 170px;
+    height: 50px;
+    position: absolute;
+    left: -175px;
+    top: 10px;
+    font-family: Red Rose;
+    text-align: left;
+    font-size: 36px;
+    letter-spacing: 0;
+
+  }
+
+  .e12_32 {
+    color: white(0, 0, 0, 1);
+    width: 212px;
+    height: 78px;
+    position: absolute;
+    left: 0px;
+    top: 10px;
+    font-family: Red Rose;
+    text-align: center;
+    font-size: 36px;
+    letter-spacing: 0;
+  }
+
+  .e12_33 {
+    color: white(0, 0, 0, 1);
+    width: 184px;
+    height: 78px;
+    position: absolute;
+    left: 200px;
+    top: 5px;
+    font-family: Red Rose;
+    text-align: center;
+    font-size: 36px;
+    letter-spacing: 0;
+  }
+
+  .e14_37 {
+    color: white(0, 0, 0, 1);
+    width: 228px;
+    height: 84px;
+    position: absolute;
+    left: 400px;
+    top: 4px;
+    font-family: Red Rose;
+    text-align: left;
+    font-size: 36px;
+    letter-spacing: 0;
+  }
+
+  .u-section-1 {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), url("images/isaac-quesada-sij6sAnEtYE-unsplash.jpg");
+    background-position: 50% 50%;
+  }
+
+  .u-section-1 .u-sheet-1 {
+    min-height: 1210px;
+  }
+
+  .u-section-1 .u-text-1 {
+    font-family: "Red Rose";
+    margin: 10px 556px 0 500px;
+  }
+
+  .u-section-1 .u-text-2 {
+    font-family: "Red Rose";
+    margin: -29px 415px 0 618px;
+  }
+
+  .u-section-1 .u-text-3 {
+    font-family: "Red Rose";
+    margin: -29px 274px 0 759px;
+  }
+
+  .u-section-1 .u-text-4 {
+    font-family: "Red Rose";
+    margin: -58px 142px 0 891px;
+  }
+
+  .u-section-1 .u-text-5 {
+    font-family: "Red Rose";
+    margin: -58px -27px 0 1025px;
+  }
+
+  .u-section-1 .u-text-6 {
+    font-weight: 400;
+    margin: 94px 57px 0;
+    color: blue;
+  }
+
+  .u-section-1 .u-text-7 {
+    font-weight: 400;
+    margin: 16px 72px 60px;
+    color: gold;
+  }
+
+  @media (max-width: 1199px) {
+    .u-section-1 .u-sheet-1 {
+      min-height: 998px;
+    }
+
+    .u-section-1 .u-text-1 {
+      margin-right: 456px;
+      margin-left: 400px;
+    }
+
+    .u-section-1 .u-text-2 {
+      margin-right: 315px;
+      margin-left: 518px;
+    }
+
+    .u-section-1 .u-text-3 {
+      margin-right: 174px;
+      margin-left: 659px;
+    }
+
+    .u-section-1 .u-text-4 {
+      margin-right: 42px;
+      margin-left: 791px;
+    }
+
+    .u-section-1 .u-text-5 {
+      margin-left: 925px;
+    }
+
+    .u-section-1 .u-text-6 {
+      margin-left: 0;
+      margin-right: 0;
+    }
+
+    .u-section-1 .u-text-7 {
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
+
+  @media (max-width: 991px) {
+    .u-section-1 .u-sheet-1 {
+      min-height: 764px;
+    }
+
+    .u-section-1 .u-text-1 {
+      margin-right: 346px;
+      margin-left: 290px;
+    }
+    .u-section-1 .u-text-2 {
+      margin-right: 205px;
+      margin-left: 408px;
+    }
+
+    .u-section-1 .u-text-3 {
+      margin-right: 64px;
+      margin-left: 549px;
+    }
+
+    .u-section-1 .u-text-4 {
+      margin-right: 0;
+      margin-left: 613px;
+    }
+
+    .u-section-1 .u-text-5 {
+      margin-left: 815px;
+    }
+  }
+
+  @media (max-width: 767px) {
+    .u-section-1 .u-sheet-1 {
+      min-height: 573px;
+    }
+
+    .u-section-1 .u-text-1 {
+      margin-right: 256px;
+      margin-left: 200px;
+    }
+
+    .u-section-1 .u-text-2 {
+      margin-right: 115px;
+      margin-left: 318px;
+    }
+
+    .u-section-1 .u-text-3 {
+      margin-right: 0;
+      margin-left: 433px;
+    }
+
+    .u-section-1 .u-text-4 {
+      margin-left: 433px;
+    }
+
+    .u-section-1 .u-text-5 {
+      margin-left: 725px;
+    }
+  }
+
+  @media (max-width: 575px) {
+    .u-section-1 .u-sheet-1 {
+      min-height: 361px;
+    }
+
+    .u-section-1 .u-text-1 {
+      margin-right: 156px;
+      margin-left: 100px;
+    }
+
+    .u-section-1 .u-text-2 {
+      margin-right: 15px;
+      margin-left: 218px;
+    }
+
+    .u-section-1 .u-text-3 {
+      margin-left: 233px;
+    }
+
+    .u-section-1 .u-text-4 {
+      margin-left: 233px;
+    }
+
+    .u-section-1 .u-text-5 {
+      margin-left: 625px;
+    }
+  }
+
+  .u-section-2 {
+    background-image: none;
+  }
+
+  .u-section-2 .u-sheet-1 {
+    min-height: 430px;
+  }
+
+  .u-section-2 .u-text-1 {
+    font-weight: 700;
+    font-size: 2.25rem;
+    margin: 15px 171px 0 192px;
+  }
+
+  .u-section-2 .u-text-2 {
+    font-size: 1rem;
+    width: 687px;
+    margin: 15px auto 0;
+  }
+
+  .u-section-2 .u-list-1 {
+    margin-top: 131px;
+    margin-bottom: 0;
+  }
+
+  .u-section-2 .u-repeater-1 {
+    grid-gap: 0px;
+  }
+
+  .u-section-2 .u-table-1 {
+    margin-top: -109px;
+    margin-bottom: 0;
+  }
+
+  .u-section-2 .u-table-header-1 {
+    font-weight: 700;
+    background-image: none;
+  }
+
+  .u-section-2 .u-table-body-1 {
+    background-image: none;
+  }
+
+  .u-block-e82a-75 {
+    background-image: none;
+  }
+
+  .u-section-2 .u-table-2 {
+    width: 521px;
+    margin: 0 auto 60px;
+  }
+
+  .u-section-2 .u-table-header-2 {
+    font-weight: 700;
+    background-image: none;
+  }
+
+  .u-section-2 .u-table-body-2 {
+    background-image: none;
+  }
+
+  .u-block-e82a-53 {
+    background-image: none;
+  }
+
+  @media (max-width: 1199px) {
+    .u-section-2 .u-text-1 {
+      width: 777px;
+      margin-top: 115px;
+      margin-left: 92px;
+      margin-right: 71px;
+    }
+
+    .u-section-2 .u-text-2 {
+      margin-top: 16px;
+    }
+
+    .u-section-2 .u-repeater-1 {
+      grid-template-columns: repeat(undefined, NaN%);
+    }
+
+    .u-section-2 .u-table-2 {
+      margin-top: -365px;
+    }
+  }
+
+  @media (max-width: 991px) {
+    .u-section-2 .u-text-1 {
+      width: 720px;
+      margin-left: 0;
+      margin-right: 0;
+    }
+
+    .u-section-2 .u-repeater-1 {
+      grid-template-columns: repeat(1, 100%);
+    }
+
+    .u-section-2 .u-table-2 {
+      margin-top: -390px;
+    }
+  }
+
+  @media (max-width: 767px) {
+    .u-section-2 .u-text-1 {
+      width: 540px;
+    }
+
+    .u-section-2 .u-text-2 {
+      width: 540px;
+    }
+
+    .u-section-2 .u-table-2 {
+      margin-top: -309px;
+    }
+  }
+
+  @media (max-width: 575px) {
+    .u-section-2 .u-text-1 {
+      width: 340px;
+    }
+
+    .u-section-2 .u-text-2 {
+      width: 340px;
+    }
+
+    .u-section-2 .u-table-2 {
+      width: 340px;
+      margin-top: -269px;
+    }
+  }
+
+  .u-section-3 {
+    background-image: none;
+  }
+
+  .u-section-3 .u-sheet-1 {
+    min-height: 3202px;
+  }
+
+  .u-section-3 .u-layout-wrap-1 {
+    width: 1140px;
+    margin: 0;
+  }
+
+  .u-section-3 .u-layout-cell-1 {
+    min-height: 2506px;
+  }
+
+  .u-section-3 .u-container-layout-1 {
+    padding: 30px 22px 23px;
+  }
+
+  .u-section-3 .u-text-1 {
+    font-weight: 700;
+    font-size: 2.25rem;
+    margin: 0 8px;
+  }
+
+  .u-section-3 .u-text-2 {
+    margin: 18px auto 0 7px;
+  }
+
+  .u-section-3 .u-text-3 {
+    line-height: 1.4;
+    margin: -15px 8px 0;
+  }
+
+  .u-section-3 .u-text-4 {
+    margin: 20px auto 0 7px;
+  }
+
+  .u-section-3 .u-text-5 {
+    line-height: 1.4;
+    margin: 20px 8px 0;
+  }
+
+  .u-section-3 .u-text-6 {
+    margin: 20px auto 0 7px;
+  }
+
+  .u-section-3 .u-text-7 {
+    line-height: 1.4;
+    margin: 20px 8px 0;
+  }
+
+  .u-section-3 .u-text-8 {
+    margin: 20px auto 0 7px;
+  }
+
+  .u-section-3 .u-text-9 {
+    line-height: 1.4;
+    margin: 20px 16px 0 0;
+  }
+
+  .u-section-3 .u-text-10 {
+    margin: 20px 0 0 auto;
+  }
+
+  .u-section-3 .u-layout-cell-2 {
+    min-height: 2506px;
+    background-image: none;
+  }
+
+  .u-section-3 .u-container-layout-2 {
+    padding: 30px 25px;
+  }
+
+  .u-section-3 .u-text-11 {
+    font-weight: 700;
+    font-size: 2.25rem;
+    margin: 0 9px 0 0;
+  }
+
+  .u-section-3 .u-text-12 {
+    margin: 21px 5px 0;
+  }
+
+  .u-section-3 .u-image-1 {
+    width: 445px;
+    height: 295px;
+    object-position: 50% 0%;
+    margin: 69px 95px 0 600px;
+  }
+
+  .u-section-3 .u-image-2 {
+    width: 445px;
+    height: 295px;
+    margin: -294px auto 0 55px;
+  }
+
+  .u-section-3 .u-image-3 {
+    width: 43px;
+    height: 43px;
+    margin: 157px 296px 0 auto;
+  }
+
+  .u-section-3 .u-text-13 {
+    margin: -22px 148px 0 auto;
+  }
+
+  .u-section-3 .u-image-4 {
+    width: 43px;
+    height: 38px;
+    margin: 24px 296px 0 auto;
+  }
+
+  .u-section-3 .u-text-14 {
+    margin: -30px 148px 60px auto;
+  }
+
+  @media (max-width: 1199px) {
+    .u-section-3 .u-sheet-1 {
+      min-height: 2763px;
+    }
+
+    .u-section-3 .u-layout-wrap-1 {
+      width: 940px;
+    }
+
+    .u-section-3 .u-layout-cell-1 {
+      min-height: 2066px;
+    }
+
+    .u-section-3 .u-text-1 {
+      margin-left: 0;
+      margin-right: 0;
+    }
+
+    .u-section-3 .u-text-3 {
+      margin-left: 0;
+      margin-right: 0;
+    }
+
+    .u-section-3 .u-text-5 {
+      margin-left: 0;
+      margin-right: 0;
+    }
+
+    .u-section-3 .u-text-7 {
+      margin-left: 0;
+      margin-right: 0;
+    }
+
+    .u-section-3 .u-text-9 {
+      margin-right: 0;
+    }
+
+    .u-section-3 .u-layout-cell-2 {
+      min-height: 2066px;
+    }
+
+    .u-section-3 .u-text-11 {
+      margin-right: 0;
+    }
+
+    .u-section-3 .u-text-12 {
+      margin-left: 0;
+      margin-right: 0;
+    }
+
+    .u-section-3 .u-image-1 {
+      margin-right: 0;
+      margin-left: 495px;
+    }
+
+    .u-section-3 .u-image-2 {
+      width: 570px;
+      height: 384px;
+    }
+
+    .u-section-3 .u-image-3 {
+      margin-top: 158px;
+    }
+
+    .u-section-3 .u-text-13 {
+      margin-top: 85px;
+    }
+
+    .u-section-3 .u-image-4 {
+      margin-top: -90px;
+    }
+
+    .u-section-3 .u-text-14 {
+      margin-top: -21px;
+    }
+  }
+
+  @media (max-width: 991px) {
+    .u-section-3 .u-sheet-1 {
+      min-height: 797px;
+    }
+
+    .u-section-3 .u-layout-wrap-1 {
+      width: 720px;
+    }
+
+    .u-section-3 .u-layout-cell-1 {
+      min-height: 100px;
+    }
+
+    .u-section-3 .u-layout-cell-2 {
+      min-height: 100px;
+    }
+
+    .u-section-3 .u-image-1 {
+      margin-left: 275px;
+    }
+  }
+
+  @media (max-width: 767px) {
+    .u-section-3 .u-sheet-1 {
+      min-height: 897px;
+    }
+
+    .u-section-3 .u-layout-wrap-1 {
+      width: 540px;
+    }
+
+    .u-section-3 .u-container-layout-1 {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+
+    .u-section-3 .u-container-layout-2 {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+
+    .u-section-3 .u-image-1 {
+      margin-left: 95px;
+    }
+
+    .u-section-3 .u-image-2 {
+      width: 540px;
+      height: 364px;
+    }
+  }
+
+  @media (max-width: 575px) {
+    .u-section-3 .u-sheet-1 {
+      min-height: 757px;
+    }
+
+    .u-section-3 .u-layout-wrap-1 {
+      width: 340px;
+    }
+
+    .u-section-3 .u-text-11 {
+      font-size: 1.5rem;
+    }
+
+    .u-section-3 .u-image-1 {
+      width: 340px;
+      height: 225px;
+      margin-left: 0;
+    }
+
+    .u-section-3 .u-image-2 {
+      width: 340px;
+      height: 229px;
+      margin-top: -224px;
+      margin-left: 0;
+    }
+
+    .u-section-3 .u-text-13 {
+      margin-right: 93px;
+    }
+
+    .u-section-3 .u-image-4 {
+      margin-left: 0;
+    }
+
+    .u-section-3 .u-text-14 {
+      margin-right: 93px;
+    }
+  }
+
+  .u-section-4 .u-sheet-1 {
+    min-height: 464px;
+  }
+
+  .u-section-5 .u-sheet-1 {
+    min-height: 464px;
+  }
+</style>
+
+<body class="u-body u-overlap u-overlap-contrast">
+  <section class="u-align-center u-clearfix u-image u-shading u-section-1" id="carousel_c016" data-image-width="810"
+    data-image-height="1080">
+    <a href="index.html"><span class="e12_35">Home</span></a>
+    <a href="aboutus.html"><span class="e12_27">About us</span></a>
+    <a href="gocovidproject.html"><span class="e12_32">Go-Covid Project</span></a>
+    <a href="exercise2.html"><span class="e12_33">Contact us</span></a>
+    <a href="devinfo.html"><span class="e14_37">Developer’s Information</span></a><br><br><br><br><br><br>
+    <div class="u-clearfix u-sheet u-sheet-1">
+
+      <h2 class="u-text u-text-custom-color-2 u-text-6">COVID IN VIETNAM</h2>
+      <p class="u-text u-text-custom-color-1 u-text-7"> The COVID-19 pandemic in Vietnam is part of the ongoing
+        worldwide pandemic of coronavirus disease 2019 (COVID-19) caused by severe acute respiratory syndrome
+        coronavirus 2 (SARS-CoV-2). On 31 December 2019, China announced the discovery of a cluster of pneumonia cases
+        in Wuhan. The virus was first confirmed to have spread to Vietnam on 23 January 2020, when two Chinese people in
+        Ho Chi Minh City tested positive for the virus. Early cases were primarily imported until local transmission
+        began to develop in February and March. Clusters of cases were later detected in Vĩnh Phúc, Hải Dương Province
+        and three major cities of the country, with the first death on 31 July 2020. The Vietnamese government's efforts
+        to stop the virus from spreading were generally effective in 2020.To combat the spread of COVID-19, Vietnam has
+        banned all foreigners from entering the country beginning March 22, 2020, and will continue to do so until
+        further notice. Vietnam experienced its greatest outbreak to date in April 2021, with over 83,000 illnesses. By
+        late July, two of the country's main cities (Ho Chi Minh City and Hanoi) and almost a third of the country's
+        population had been placed under some type of curfew. Vietnamese citizens experience the shoortage of vaccine
+        for about 3 months, since April 2021. Up to date, the governments generally control the outburst of the
+        pandemic. A vicible action is that “New Normal” status has been set, and some industries started working again.
+        The statistic below would give some overview. COVID in Vietnam The COVID-19 pandemic in Vietnam is part of the
+        ongoing worldwide pandemic of coronavirus disease 2019 (COVID-19) caused by severe acute respiratory syndrome
+        coronavirus 2 (SARS-CoV-2). On 31 December 2019, China announced the discovery of a cluster of pneumonia cases
+        in Wuhan. The virus was first confirmed to have spread to Vietnam on 23 January 2020, when two Chinese people in
+        Ho Chi Minh City tested positive for the virus. Early cases were primarily imported until local transmission
+        began to develop in February and March. Clusters of cases were later detected in Vĩnh Phúc, Hải Dương Province
+        and three major cities of the country, with the first death on 31 July 2020. The Vietnamese government's efforts
+        to stop the virus from spreading were generally effective in 2020.To combat the spread of COVID-19, Vietnam has
+        banned all foreigners from entering the country beginning March 22, 2020, and will continue to do so until
+        further notice. Vietnam experienced its greatest outbreak to date in April 2021, with over 83,000 illnesses. By
+        late July, two of the country's main cities (Ho Chi Minh City and Hanoi) and almost a third of the country's
+        population had been placed under some type of curfew. Vietnamese citizens experience the shoortage of vaccine
+        for about 3 months, since April 2021. Up to date, the governments generally control the outburst of the
+        pandemic. A vicible action is that “New Normal” status has been set, and some industries started working again.
+        The statistic below would give some overview.   About usGo-Covid ProjectContact usDeveloper’s InfomationThe
+        vaccination process is still on going, while people have to get used to “New normal” lifestyle. That create the
+        basis for tourism to work again. The governments intend to re-open the tourism again by graually allow some
+        tourist attrations to work in terms of tourism, e.g Vũng Tau2 City, Đà Lạt City, and Cần Giờ District. However,
+        how can we assure that this action will continue until the pandemic has been treated totally? This project’s aim
+        is to give some guideline for people how to travel safe and sound during pandemic, as swell as giving
+        instruction for tour agencies for their stable development.</p>
+    </div>
+  </section>
+  <section class="u-align-center u-black u-clearfix u-section-2" id="carousel_52c8">
+    <div class="u-clearfix u-sheet u-sheet-1">
+      <h2 class="u-text u-text-1">Statistics</h2>
+      <h5 class="u-text u-text-2">Date 21/10/2021</h5>
+      <div class="u-expanded-width u-list u-list-1">
+        <div class="u-repeater u-repeater-1"></div>
+      </div>
+      <div class="u-expanded-width u-table u-table-responsive u-table-1">
+        <table class="u-table-entity">
+          <colgroup>
+            <col width="25%">
+            <col width="25%">
+            <col width="25%">
+            <col width="25%">
+          </colgroup>
+          <thead class="u-black u-table-header u-table-header-1">
+            <tr style="height: 46px;">
+              <th class="u-border-1 u-border-black u-table-cell"> Daily Cases Receiving Treatment </th>
+              <th class="u-border-1 u-border-black u-table-cell"> Daily Cases Receiving Treatment </th>
+              <th class="u-border-1 u-border-black u-table-cell"> Critical Cases treated in ICU </th>
+              <th class="u-border-1 u-border-black u-table-cell"> Daily Confirmed Cases </th>
+            </tr>
+          </thead>
+          <tbody class="u-grey-70 u-table-body u-table-body-1">
+            <tr style="height: 75px;">
+              <td class="u-border-1 u-border-grey-50 u-table-cell"> 55902</td>
+              <td class="u-border-1 u-border-grey-50 u-table-cell">8874</td>
+              <td class="u-border-1 u-border-grey-50 u-table-cell">0</td>
+              <td class="u-border-1 u-border-grey-50 u-table-cell"> 8874</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="u-table u-table-responsive u-table-2">
+        <table class="u-table-entity">
+          <colgroup>
+            <col width="37.1%">
+            <col width="32.4%">
+            <col width="30.5%">
+          </colgroup>
+          <thead class="u-black u-table-header u-table-header-2">
+            <tr style="height: 69px;">
+              <th class="u-border-1 u-border-black u-table-cell">Total Cases</th>
+              <th class="u-border-1 u-border-black u-table-cell">Death</th>
+              <th class="u-border-1 u-border-black u-table-cell">Recovery</th>
+            </tr>
+          </thead>
+          <tbody class="u-grey-70 u-table-body u-table-body-2">
+            <tr style="height: 46px;">
+              <td class="u-border-1 u-border-grey-50 u-table-cell"> 870K</td>
+              <td class="u-border-1 u-border-grey-50 u-table-cell"> 21,344</td>
+              <td class="u-border-1 u-border-grey-50 u-table-cell"> 796,583</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+  <section class="u-black u-clearfix u-section-3" id="carousel_d920">
+    <div class="u-clearfix u-sheet u-sheet-1">
+      <div class="u-clearfix u-layout-wrap u-layout-wrap-1">
+        <div class="u-layout">
+          <div class="u-layout-row">
+            <div class="u-container-style u-layout-cell u-size-30 u-layout-cell-1">
+              <div class="u-container-layout u-container-layout-1">
+                <h2 class="u-text u-text-1"> For Businesses</h2>
+                <h4 class="u-text u-text-default u-text-palette-3-base u-text-2"> 1. To help protect employees and
+                  customers, travel businesses should alter operations, modify personnel procedures, and/or restructure
+                  public spaces.</h4>
+                <h6 class="u-custom-font u-text u-text-font u-text-3">
+                  <br>Among the practices that should be included in these initiatives are:&nbsp;<br>+ Masks are worn to
+                  protect both the mask wearer and others around them. All travel personnel and consumers are highly
+                  encouraged to wear masks, according to the travel industry. Wearing a mask is a highly effective
+                  technique for preventing the transmission of infection, according to a wealth of research from medical
+                  specialists.&nbsp;<br>+ Reinforcing hand sanitizer, which can reduce the risk of respiratory virus
+                  transmission by 50%;&nbsp;<br>+&nbsp;Encourage physical separation by posting new signage to maintain
+                  correct line and common area separation, discouraging congregating in congested locations, rearranging
+                  public spaces, or limiting the number of personnel and customers in various regions;&nbsp;<br>+
+                  Consider how you may decrease employee physical touch with clients while yet providing excellent
+                  service, such as through online purchasing, curbside service delivery, automated entrances, and other
+                  methods.&nbsp;<br>+ Installing physical barriers, such as clear screens, to create sufficient
+                  separation between customers and personnel; Using personal protection equipment (PPE);<br>+ Employees
+                  and customers are being educated about their joint obligation to assist safeguard one another in a
+                  COVID-19 environment.
+                </h6>
+                <h4 class="u-text u-text-default u-text-palette-3-base u-text-4"> 2. Travel businesses should consider
+                  implementing touchless solutions, where practical, to limit the opportunity for virus transmission
+                  while also enabling a positive travel experience. </h4>
+                <h6 class="u-custom-font u-text u-text-font u-text-5">Contactless technology or low-contact method
+                  should be applied in:&nbsp;<br>+ Purchasing tickets;&nbsp;<br>+ Limiting queues; Confirming
+                  identification;&nbsp;<br>+ Checking in / checking out;&nbsp;<br>+ Paying for goods and
+                  services;&nbsp;<br>+ Automating ordering and pick-up for food and services&nbsp;<br>+ A broader range
+                  of travel and hospitality amenities.
+                </h6>
+                <h4 class="u-text u-text-default u-text-palette-3-base u-text-6">3. Travel businesses should adopt and
+                  implement enhanced sanitation procedures specifically designed to combat the transmission of COVID-19
+                </h4>
+                <h6 class="u-custom-font u-text u-text-font u-text-7">+ Establish a policy implementing more frequent
+                  hand washing by all employees and, in the absence of hand washing, make frequent use of an
+                  alcohol-based hand sanitizer (at least 60% alcohol);&nbsp;<br>+ Sanitizing more frequently, using
+                  products and disinfectants that meet requirements for effectiveness against COVID-19;&nbsp;<br>+
+                  Special attention to high-touch surfaces;&nbsp;<br>+ Providing hand sanitizer in public areas
+                  throughout facilities;&nbsp;<br>+ Modifying business hours when necessary to carry out thorough
+                  sanitation and disinfection procedures;&nbsp;<br>+ Providing new training for employees on
+                  implementing these measures with oversight on execution;&nbsp;<br>+ Researching technological
+                  innovations and testing new procedures, as appropriate, to enhance sanitation
+                </h6>
+                <h4 class="u-text u-text-default u-text-palette-3-base u-text-8"> 4. Travel businesses should recomend
+                  travel employees get the COVID-19 vaccine in addition to providing health screening measures,
+                  isolating workers with possible COVID-19 symptoms and providing health resources to customers.</h4>
+                <h6 class="u-custom-font u-text u-text-font u-text-9">+ Establish a policy implementing more frequent
+                  hand washing by all employees and, in the absence of hand washing, make frequent use of an
+                  alcohol-based hand sanitizer (at least 60% alcohol);&nbsp;<br>+ Sanitizing more frequently, using
+                  products and disinfectants that meet requirements for effectiveness against COVID-19;&nbsp;<br>+
+                  Special attention to high-touch surfaces;&nbsp;<br>+ Providing hand sanitizer in public areas
+                  throughout facilities;&nbsp;<br>+ Modifying business hours when necessary to carry out thorough
+                  sanitation and disinfection procedures;&nbsp;<br>+ Providing new training for employees on
+                  implementing these measures with oversight on execution;&nbsp;<br>+ Researching technological
+                  innovations and testing new procedures, as appropriate, to enhance sanitation
+                </h6>
+                <h4 class="u-text u-text-default u-text-palette-3-base u-text-10">5. Travel businesses should establish
+                  a set of procedures aligned with CDC guidance should an employee or customer test positive for
+                  COVID-19.</h4>
+              </div>
+            </div>
+            <div class="u-container-style u-layout-cell u-palette-3-base u-size-30 u-layout-cell-2">
+              <div class="u-container-layout u-container-layout-2">
+                <h2 class="u-text u-text-11">For Customers/Travellers</h2>
+                <ol class="u-spacing-20 u-text u-text-12">+ Get an approved COVID-19 vaccine.&nbsp;<div>+ Put on a mask.
+                    COVID-19 can be stopped by wearing a mask with two or more layers. It should be worn over your nose
+                    and mouth and tucked under your chin.&nbsp;<div>+ Check to see if it fits snugly against your
+                      cheeks. Touch your mask, eyes, nose, and mouth as little as possible. Wear a mask in public at all
+                      times, indoors and out, except when eating, drinking, or sleeping.&nbsp;</div>
+                  </div>
+                  <div>
+                    <div>+ Vaccinate yourself against the flu every year. This flu season, a flu vaccine is an important
+                      element of preserving your and your family's health. Distancing yourself physically is a good
+                      idea.&nbsp;</div>
+                  </div>
+                  <div>
+                    <div>+ Stay at least six feet away from those who don't live with you, both indoors and out, because
+                      even individuals who don't have symptoms can spread the virus. COVID-19</div>
+                  </div>
+                  <div>
+                    <div>+ Hands should be washed often. If soap and water are not available, wash hands for at least 20
+                      seconds with soap and water, including after using the restroom and when in a public location, or
+                      use a hand sanitizer with at least 60% alcohol if soap and water are not available.&nbsp;</div>
+                  </div>
+                  <div>
+                    <div>+ Check your destination's details before leaving. For local restrictions and the most
+                      up-to-date travel information regarding your location, check with your local health
+                      authority.&nbsp;</div>
+                  </div>
+                  <div>
+                    <div>+ Maintain healthy travel habits once you've arrived. Continue to follow safe and healthy
+                      travel habits such as wearing a mask and keeping a safe distance from others until you arrive at
+                      your destination.</div>
+                  </div>
+                </ol>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img class="u-image u-image-default u-image-1" src="images/GettyImages-1216472651.jpg" alt=""
+        data-image-width="1512" data-image-height="851">
+      <img class="u-image u-image-default u-image-2"
+        src="images/williamsburg-virginia-u-s-june-visitors-tour-guide-wearing-mask-as-required-visitors-tour-guide-wearing-mask-as-189175417.jpg"
+        alt="" data-image-width="800" data-image-height="539">
+      <img class="u-image u-image-default u-image-3" src="images/21155_1.png" alt="" data-image-width="1200"
+        data-image-height="630">
+      <a href="https://www.facebook.com/globalshapershcmc">
+        <h6 class="u-text u-text-default u-text-13">Our Facebook&nbsp;</h6>
+      </a>
+      <img class="u-image u-image-default u-image-4" src="images/320px_youtube_dark_icon__2017__1.png" alt=""
+        data-image-width="320" data-image-height="225">
+      <a href="https://www.youtube.com/c/GlobalShapers">
+        <h6 class="u-text u-text-default u-text-14">Our Youtube</h6>
+      </a>
+    </div>
+  </section>
+  <section class="u-align-center u-clearfix u-section-4" id="sec-869b">
+    <div class="u-clearfix u-sheet u-valign-middle u-sheet-1"></div>
+  </section>
+  <section class="u-align-center u-clearfix u-section-5" id="sec-7f05">
+    <div class="u-clearfix u-sheet u-valign-middle u-sheet-1"></div>
+  </section>
+
+
+
+</body>
+
+</html>

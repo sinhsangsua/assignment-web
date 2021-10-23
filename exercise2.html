@@ -1,0 +1,183 @@
+<html>
+<head>
+  <title>GoCovid</title>
+</head>
+<style>
+  form {
+    border: 1px solid;
+    width: 500px;
+    padding: 10px;
+  }
+
+  table {
+    margin: auto;
+  }
+
+  .e12_27 {
+    color: rgba(0, 0, 0, 1);
+    width: 170px;
+    height: 50px;
+    position: absolute;
+    left: 450px;
+    top: 10px;
+    font-family: Red Rose;
+    text-align: left;
+    font-size: 36px;
+    letter-spacing: 0;
+
+  }
+
+  .e12_32 {
+    color: rgba(0, 0, 0, 1);
+    width: 212px;
+    height: 78px;
+    position: absolute;
+    left: 600px;
+    top: 10px;
+    font-family: Red Rose;
+    text-align: center;
+    font-size: 36px;
+    letter-spacing: 0;
+  }
+
+  .e12_33 {
+    color: rgba(0, 0, 0, 1);
+    width: 184px;
+    height: 78px;
+    position: absolute;
+    left: 800px;
+    top: 10px;
+    font-family: Red Rose;
+    text-align: center;
+    font-size: 36px;
+    letter-spacing: 0;
+  }
+
+  .e12_35 {
+    color: rgba(0, 0, 0, 1);
+    width: 212px;
+    height: 78px;
+    position: absolute;
+    left: 250px;
+    top: 10px;
+    font-family: Red Rose;
+    text-align: center;
+    font-size: 36px;
+    letter-spacing: 0;
+  }
+
+  .e14_37 {
+    color: rgba(0, 0, 0, 1);
+    width: 228px;
+    height: 84px;
+    position: absolute;
+    left: 1000px;
+    top: 4px;
+    font-family: Red Rose;
+    text-align: left;
+    font-size: 36px;
+    letter-spacing: 0;
+  }
+
+  .e1_2 {
+    background-color: rgba(255, 255, 255, 1);
+    width: 1440px;
+    height: 1024px;
+    position: absolute;
+    background-image: url(images/desktop___1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .myform {
+    background-color: white;
+  }
+</style>
+<script>
+  function requirement() {
+    if ( document.getElementById("name").value == "" || document.getElementById("location").value == "" || document.getElementById("question").value == "" || document.getElementById("mail").value == "") {
+      alert("PLEASE INPUT AGAIN");
+    }
+    else {
+      return true;
+    }
+  }
+  function noti() {
+    if (requirement()) {
+      let popup = window.open("", "", "width = 600, height = 600");
+      popup.document.write("<h3>Congratulation...!!!</h3><\/br>");
+      popup.document.write("<b>Your Name: </b>" + document.getElementById("name").value + "<\/br>");
+      popup.document.write("<b>Your Email: </b>" + document.getElementById("mail").value + "<\/br>");
+      popup.document.write("<b>Your are from: </b>" + document.getElementById("location").value + "<\/br>");
+      popup.document.write("<b>Your Details Enquiry: </b>" + document.getElementById("question").value + "<\/br>");
+    }
+  }
+</script>
+
+<body>
+  <div class=e1_2>
+    <div>
+      <a href="index.html"><span class="e12_35">Home</span></a>
+      <a href="aboutus.html"><span class="e12_27">About us</span></a>
+      <a href="gocovidproject.html"><span class="e12_32">Go-Covid Project</span></a>
+      <a href="exercise2.html"><span class="e12_33">Contact us</span></a>
+      <a href="devinfo.html"><span class="e14_37">Developer’s Information</span></a>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br><br><br><br>
+    <div align="center">
+      <form class="myform">
+        <h2 align="center">VISITOR ENQUIRY FORM</h2>
+        <table>
+          <tr>
+            <td><label> Full Name</label></td>
+            <td> : </td>
+            <td><input type="text" id="name" name="fullname" placeholder="your full name"></td>
+          </tr>
+          <tr>
+            <td><label>Email</label></td>
+            <td> : </td>
+            <td><input type="text" id="mail" placeholder="youremail@gmail.com"></td>
+          </tr>
+          <tr>
+            <td><label>Gender</label></td>
+            <td> : </td>
+            <td>
+              <input type="radio" name="gender" value="male"> Male
+              <input type="radio" name="gender" value="female"> Female
+            </td>
+          </tr>
+          <tr>
+            <td><label>Location </label></td>
+            <td> : </td>
+            <td><Select id="location">
+                <option value="" disabled selected>--Select your location--</option>
+                <option value="Miền Bắc">Miền Bắc</option>
+                <option value="Miền Trung">Miền Trung</option>
+                <option value="Miền Nam">Miền Nam</option>
+              </Select></td>
+          </tr>
+          <tr>
+            <td><label>Please Write Your Inquiry </label></td>
+            <td> : </td>
+            <td><textarea name="" id="question" cols="30" rows="10" placeholder="Type your inquiries here"></textarea>
+            </td>
+          </tr>
+
+
+        </table>
+        <div align="center">
+          <button onclick="noti()">Submit</button>
+          <button onclick="">Cancel</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+
+</body>
+
+</html>
